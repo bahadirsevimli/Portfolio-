@@ -1,13 +1,22 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 
 
 export default function Projects() {
 
+    const [isDarkMode, setIsDarkMode] = useState(() => {
+        return JSON.parse(localStorage.getItem("darkMode")) || false;
+      })
+    
+      useEffect(() => {
+        localStorage.setItem("darkMode", JSON.stringify(isDarkMode));
+      }, [isDarkMode]);
+
 
     return(
-        <section className="flex flex-col gap-7">
-            <h2 className="text-black font-semibold text-5xl">Projects</h2>
+        <section className="flex flex-col gap-10">
+            <h2 className={isDarkMode ? "font-semibold !text-5xl text-white" : "text-black font-semibold !text-5xl"}>Projects</h2>
             <div className="flex justify-between">
                 
                 <div className="flex w-xs">
@@ -20,12 +29,12 @@ export default function Projects() {
                             <div className="border-1 border-[#3730A3] pb-1 pt-1 pl-3 pr-3 rounded-md">redux</div>
                             <div className="border-1 border-[#3730A3] pb-1 pt-1 pl-3 pr-3 rounded-md">axios</div>
                         </div>
-                        <div className="flex justify-between text-[#3730A3] underline text-sm">
+                        <div className="flex justify-between underline text-sm">
                             <Link to="https://github.com/bahadirsevimli/WitFlix-react">
-                                <div>Github</div>
+                                <div className="text-[#3730A3]">Github</div>
                             </Link>
                             <Link to="https://witflixx.netlify.app/">
-                                <div>View Site</div>
+                                <div className="text-[#3730A3]">View Site</div>
                             </Link>
                         </div>
                     </div>
@@ -42,10 +51,10 @@ export default function Projects() {
                         </div>
                         <div className="flex justify-between text-[#3730A3] underline text-sm">
                             <Link to="https://github.com/bahadirsevimli/WitFlix-react">
-                                <div>Github</div>
+                                <div className="text-[#3730A3]">Github</div>
                             </Link>
                             <Link to="https://witflixx.netlify.app/">
-                                <div>View Site</div>
+                                <div className="text-[#3730A3]">View Site</div>
                             </Link>
                         </div>
                     </div>
@@ -62,10 +71,10 @@ export default function Projects() {
                         </div>
                         <div className="flex justify-between text-[#3730A3] underline text-sm">
                             <Link to="https://github.com/bahadirsevimli/WitFlix-react">
-                                <div>Github</div>
+                                <div className="text-[#3730A3]">Github</div>
                             </Link>
                             <Link to="https://witflixx.netlify.app/">
-                                <div>View Site</div>
+                                <div className="text-[#3730A3]">View Site</div>
                             </Link>
                         </div>
                     </div>
