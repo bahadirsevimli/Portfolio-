@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import useFetchData from "../hooks/useFetchData";
 
 
 
@@ -13,12 +14,13 @@ export default function Projects() {
         localStorage.setItem("darkMode", JSON.stringify(isDarkMode));
       }, [isDarkMode]);
 
+      const { data } = useFetchData();    
 
     return(
         <section className="flex flex-col gap-10">
-            <h2 className={isDarkMode ? "font-semibold !text-5xl text-white" : "text-black font-semibold !text-5xl"}>Projects</h2>
+            <h2 className={isDarkMode ? "font-semibold !text-5xl text-white" : "text-black font-semibold !text-5xl"}>{ data && data.projectsSection.project}</h2>
             <div className="flex justify-between">
-                
+                {/* BURADAN AŞAĞISI YAPILACAK MAPLANARAK ! */}
                 <div className="flex w-xs">
                     <div className="flex flex-col gap-3">
                         <img src="/assets/images/WitFlixProject.png" alt="Witflix" />

@@ -44,19 +44,27 @@ const database={
            
         },
         profileSection:{
+            profile: "Profile",
             headers:{
                 profile: "Profile",
                 aboutMe: "About Me"
             },
-            questions:[
-                "Birthday", "Location", "Education", "Role"
-            ],
-            answers:[
-                "12.01.2001", "Kocaeli", "Gaziosmanpasa University Physiotherapy 2023", "Frontend"
-            ],
+            questions:{
+                birthday: "Birthday",
+                location: "Location",
+                education: "Education",
+                role: "Role",
+            },
+            answers:{
+                birthday: "12.01.2001",
+                location: "Kocaeli",
+                education: "Gaziosmanpasa University Physiotherapy 2023",
+                role: "Frontend"
+            },
             Introduce: "After graduating from university, I worked as a physiotherapist for about a year. Then I decided to get software training. I am currently receiving 6 months of bootcamp in front end and back end at Workintech."
         },
         projectsSection:{
+            project: "Projects",
             projects:[
                 {
                     url: "WitFlixProject.png",
@@ -126,19 +134,27 @@ const database={
            
         },
         profileSection:{
+            profile: "Profil",
             headers:{
                 profile: "Profil",
                 aboutMe: "Hakkımda"
             },
-            questions:[
-                "Doğum günü", "İkamet", "Eğitim", "Rol"
-            ],
-            answers:[
-                "12.01.2001", "Kocaeli", "Gaziosmanpaşa Üniversitesi Fizyotearapi 2023", "Frontend"
-            ],
+            questions:{
+                birthday: "Doğum günü",
+                location: "Konum",
+                education: "Eğitim",
+                role: "Rol",
+            },
+            answers:{
+                birthday: "12.01.2001",
+                location: "Kocaeli",
+                education: "Gaziosmanpaşa Üniversitesi Fizyoterapi 2023",
+                role: "Ön uç "
+            },
             Introduce: "Üniversiteden mezun olduktan sonra yaklaşık bir yıl fizyoterapist olarak çalıştım. Daha sonra yazılım eğitimi almaya karar verdim. Şu anda Workintech'te ön uç ve arka uç olmak üzere toplam 6 aylık bir eğitim alıyorum."
         },
         projectsSection:{
+            project: "Projeler",
             projects:[
                 {
                     url: "WitFlixProject.png",
@@ -153,7 +169,7 @@ const database={
             email: "bahadirsevimli@gmail.com",
             emailClickUrl:"mailto:bahadirsevimli@gmail.com",
             buttons: {
-                personalBlog: "Personal Blog",
+                personalBlog: "Kişisel Blog",
                 github: "Github",
                 githubUrl: "https://github.com/bahadirsevimli",
                 linkedin: "Linkedin",
