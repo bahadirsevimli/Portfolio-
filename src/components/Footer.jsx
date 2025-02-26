@@ -1,25 +1,19 @@
-import { useEffect, useState } from "react";
+
 import { Link } from "react-router-dom";
 import useFetchData from "../hooks/useFetchData";
+import { useDarkMode } from "../context/DarkModeContext";
 
 
 export default function Footer (){
-
-    const [isDarkMode, setIsDarkMode] = useState(() => {
-            return JSON.parse(localStorage.getItem("darkMode")) || false;
-          })
-        
-          useEffect(() => {
-            localStorage.setItem("darkMode", JSON.stringify(isDarkMode));
-          }, [isDarkMode]);
-
-          const { data } = useFetchData(); 
+    const { isDarkMode } = useDarkMode();
+    const { data } = useFetchData(); 
 
     return(
         <footer className={isDarkMode? "flex justify-center bg-black" : "bg-[#f9f9f9] flex justify-center"}>
             <div className="w-[80%] flex flex-col gap-13 mt-13 mb-13">
-                    <h2 className={ isDarkMode ? "font-semibold !text-5xl w-[45%] text-white" : "text-black font-semibold !text-5xl w-[45%]"}>{ data && data.footerSection.banner}</h2>
-                    <div className="flex justify-between">
+                    <h2 className={` font-semibold sm:w-[45%] w-full ${isDarkMode ? "text-white" : "text-black"} sm:!text-5xl !text-3xl`}>{ data && data.footerSection.banner}</h2>
+                    {/* <h2 className={ isDarkMode ? "font-semibold !text-5xl w-[45%] text-white" : "text-black font-semibold !text-5xl sm:w-[45%] w-full"}>{ data && data.footerSection.banner}</h2> */}
+                    <div className="flex sm:flex-row flex-col justify-between">
                         <Link to={ data && data.footerSection.emailClickUrl}>
                              <p className="text-red-700 underline tracking-wider cursor-pointer">{ data && data.footerSection.email}</p>
                         </Link>

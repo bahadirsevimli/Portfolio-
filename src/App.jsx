@@ -7,32 +7,37 @@ import Main from './components/Main'
 import Profile from './components/Profile'
 import Projects from './components/Projects'
 import SkillsSection from './components/Skills'
-import { useEffect, useState } from 'react';
+import { useRef } from 'react';
+import { useDarkMode } from './context/DarkModeContext';
+
 
 
 function App() {
+  const { isDarkMode } = useDarkMode();
+  const componentRef = useRef(null);
+  const SkillsRef = useRef(null);
 
-  const [isDarkMode, setIsDarkMode] = useState(() => {
-    return JSON.parse(localStorage.getItem("darkMode")) || false;
-  })
-
-  useEffect(() => {
-    localStorage.setItem("darkMode", JSON.stringify(isDarkMode));
-  }, [isDarkMode]);
+ 
   
   return (
-    <div className="flex flex-col min-h-screen">
-      <main className={isDarkMode ? "flex-grow w-full flex justify-center text-lg bg-black" : "flex-grow w-full flex justify-center text-lg"}>
-        <div className={isDarkMode ? "text-white w-[80%] !mt-5 flex flex-col gap-20 tracking-wide leading-7" : "w-[80%] !mt-5 text-[#6c7180] flex flex-col gap-20 tracking-wide leading-7"}>
-          <Header />
-          <Main />
-          <SkillsSection />
-          <Profile />
-          <Projects />
-        </div>
-      </main>
-      <Footer />
-    </div>
+    
+      <div className="flex flex-col min-h-screen">
+        <main className={isDarkMode ? "flex-grow w-full flex justify-center text-lg bg-black" : "flex-grow w-full flex justify-center text-lg"}>
+          <div className={isDarkMode ? "text-white w-[80%] !mt-5 flex flex-col sm:gap-20 gap-15 tracking-wide leading-7" : "w-[80%] !mt-5 text-[#6c7180] flex flex-col sm:gap-20 gap-15 tracking-wide leading-7"}>
+            <Header scrollToSectionProjects={componentRef} scrollToSectionSkills={SkillsRef} />
+            <Main />
+            <div ref={SkillsRef}>
+              <SkillsSection />
+            </div>
+            <Profile />
+            <div ref={componentRef}>
+              <Projects />
+            </div>
+          </div>
+        </main>
+        <Footer />
+      </div>
+    
   );
 }
 export default App

@@ -1,13 +1,18 @@
 import { FormGroup, Input } from 'reactstrap';
 import { Link } from "react-router-dom";
 import { useState } from 'react';
-import axios from 'axios';
 import useFetchData from '../hooks/useFetchData';
 
 
+export default function Header({scrollToSectionProjects, scrollToSectionSkills}){
 
+    const handleScrollProjects = () => {
+        scrollToSectionProjects.current?.scrollIntoView({behavior: "smooth"});
+    }
 
-export default function Header(){
+    const handleScrollSkills = () => {
+        scrollToSectionSkills.current?.scrollIntoView({behavior: "smooth"});
+    }
 
     const [darkMode, setDarkMode] = useState(() => {
         return localStorage.getItem("darkMode") === "true";
@@ -24,6 +29,7 @@ export default function Header(){
 
 
     const [language, setLanguage] = useState(() => localStorage.getItem("language"));
+    console.log(language)
 
     const toggleLanguage = () => {
         setLanguage(prevLanguage => {
@@ -41,35 +47,43 @@ export default function Header(){
 
     return(
     <div className="flex flex-col gap-10">
-        <div className="flex justify-end tracking-widest font-semibold text-sm">
+        <div className="flex justify-start sm:justify-end tracking-widest font-semibold sm:text-sm text-xs">
         
-      <FormGroup switch>
-        <Input 
-        className='cursor-pointer'
-        checked={darkMode}
-        onChange={toggleDarkMode} 
-        type="switch" 
-        role="switch" />
-      </FormGroup>
+            <FormGroup switch>
+                <Input 
+                className='cursor-pointer'
+                checked={darkMode}
+                onChange={toggleDarkMode} 
+                type="switch" 
+                role="switch" />
+            </FormGroup>
       
-            <div>{ data && data.headerSection.mode} | <a onClick={toggleLanguage} className="!text-[#3730A3] cursor-pointer">{ data && data.headerSection.language}</a></div>
+          
+            <div>
+                {data && data.headerSection.mode} | 
+                <a onClick={toggleLanguage} className="cursor-pointer">
+                    {language === "türkçe" ? (
+                    <>
+                        <span>{data?.headerSection?.changeContext}</span> 
+                        <span className="text-[#3730A3]"> {data?.headerSection?.language}</span>
+                    </>
+                    ) : (
+                    <>
+                        <span className="text-[#3730A3]">{data?.headerSection?.language}</span> 
+                        <span> {data?.headerSection?.changeContext}</span>
+                    </>
+                    )}
+                </a>
+            </div>
         </div>
-        <div className="flex justify-between">
+        <div className="flex sm:flex-row flex-col justify-between gap-3">
             <div className="w-15 h-15 bg-[#edebff] text-[#3730A3] text-3xl rounded-full pl-5 !pt-3 transform-[rotate(30deg)] "><span className="opacity-70">B</span></div>
-            <nav className="flex gap-25 font-normal">
-                <Link to="/">
-                     <div className="!p-3">{ data && data.headerSection.navbar.skills}</div>
+            <nav className="flex  sm:gap-x-5 sm:gap-y-0 font-normal sm:text-lg text-sm">
+                     <div onClick={handleScrollSkills} className="!p-3 cursor-pointer">{ data && data.headerSection.navbar.skills}</div>
+                     <div onClick={handleScrollProjects} className="!p-3 cursor-pointer">{ data && data.headerSection.navbar.projects}</div>
+                <Link to={ data && data.headerSection.navbar.hireMeUrl}>
+                     <div className="border-1 border-[#3730A3] text-[#3730A3] sm:!p-3 sm:!pr-10 sm:!pl-10 p-2 rounded-xl ">{ data && data.headerSection.navbar.hireMe}</div>
                 </Link>
-                <Link to="/">
-                     <div className="!p-3">{ data && data.headerSection.navbar.projects}</div>
-                </Link>
-                <Link to="/">
-                     <div className="border-1 border-[#3730A3] text-[#3730A3] !p-3 !pr-10 !pl-10 rounded-xl ">{ data && data.headerSection.navbar.hireMe}</div>
-                </Link>
-                
-                
-                
-               
             </nav>
         </div>
     </div>
