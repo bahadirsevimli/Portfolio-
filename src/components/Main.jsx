@@ -23,10 +23,14 @@ export default function Main () {
                         <div className="text-white bg-[#3730A3] sm:!pt-3 sm:!pb-3 sm:pr-6 sm:pl-6 pt-2 pb-2 pr-2 pl-2 rounded-md">{ data && data.mainSection.buttons.hireMe}</div>
                     </Link>
                     <Link to={ data && data.mainSection.buttons.githubUrl}>
-                        <div className="text-[#3730A3] border-[#3730A3] border-1 sm:!pt-3 sm:!pb-3 sm:pr-6 sm:pl-6 pt-2 pb-2 pr-2 pl-2 rounded-md">{ data && data.mainSection.buttons.github}</div>
+                        <div className="text-[#3730A3] border-[#3730A3] border-1 sm:!pt-3 sm:!pb-3 sm:pr-6 sm:pl-6 pt-2 pb-2 pr-2 pl-2 rounded-md flex gap-2">
+                            <img className="sm:w-6 w-5" src={data && data.mainSection.buttons.githubSvg} alt="" />{ data && data.mainSection.buttons.github}
+                        </div>
                     </Link>
                     <Link to={ data && data.mainSection.buttons.linkedinUrl}>
-                        <div className="text-[#3730A3] border-[#3730A3] border-1 sm:!pt-3 sm:!pb-3 sm:pr-6 sm:pl-6 pt-2 pb-2 pr-2 pl-2 rounded-md">{ data && data.mainSection.buttons.linkedin}</div>
+                        <div className="text-[#3730A3] border-[#3730A3] border-1 sm:!pt-3 sm:!pb-3 sm:pr-6 sm:pl-6 pt-2 pb-2 pr-2 pl-2 rounded-md flex gap-2">
+                        <img className="sm:w-6 w-5" src={data && data.mainSection.buttons.linkedinSvg} alt="" />{ data && data.mainSection.buttons.linkedin}
+                        </div>
                     </Link>
                 </div>
             </div>
