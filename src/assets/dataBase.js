@@ -140,8 +140,10 @@ const database={
                 hireMeUrl: "mailto:bahadirsevimli@gmail.com",
                 github: "Github",
                 githubUrl: "https://github.com/bahadirsevimli",
+                githubSvg: "/assets/svg/github.svg",
                 linkedin: "Linkedin",
-                linkedinUrl: "https://www.linkedin.com/in/bahadirsevimli/"
+                linkedinUrl: "https://www.linkedin.com/in/bahadirsevimli/",
+                linkedinSvg: "/assets/svg/linkedin.svg",
             }
         },
         skillsSection: {
