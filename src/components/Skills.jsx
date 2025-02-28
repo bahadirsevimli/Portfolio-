@@ -9,11 +9,15 @@ export default function SkillsSection(){
     return(
         <section className="flex flex-col gap-7">
             <h2 className={isDarkMode ? "font-semibold !text-5xl text-white" : "text-black font-semibold !text-5xl"}>{ data && data.skillsSection.skill}</h2>
-            <div className="flex sm:flex-row flex-col justify-between sm:gap-30 gap-5">
+            <div className="flex sm:flex-row flex-row sm:gap-10 gap-3 sm:w-[70%] flex-wrap">
             { data && data.skillsSection.skills.map((skill, index) => 
-                <div key={index} className="flex flex-col gap-6">
-                    <h3 className="text-3xl !text-[#3730A3]">{skill.header}</h3>
-                    <p className="text-xs">{skill.text}</p>
+                <div key={index} className="flex justify-center sm:justify-start">
+                    
+                    <div className="!text-[#3730A3] border-[#3730A3] border-2 rounded-xl pt-2 pb-2 pl-4 pr-4   flex justify-center gap-2">
+                        <img className="w-7" src={skill.svgUrl} />
+                        <h5>{skill.header}</h5>
+                    </div>
+                   
                 </div>
             )}
             </div>

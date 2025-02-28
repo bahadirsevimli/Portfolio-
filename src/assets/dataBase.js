@@ -33,15 +33,35 @@ const database={
             skills:[
                 {
                     header: "Java Script",
-                    text: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+                    svgUrl: "/assets/svg/javaScript.svg"
                 },
                 {
-                    header: "React.Js",
-                    text: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+                    header: "React.js",
+                    svgUrl: "/assets/svg/react.svg"
                 },
                 {
                     header: "Node.js",
-                    text: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+                    svgUrl: "/assets/svg/node.svg"
+                },
+                {
+                    header: "Redux",
+                    svgUrl: "/assets/svg/redux.svg"
+                },
+                {
+                    header: "HTML 5",
+                    svgUrl: "/assets/svg/html.svg"
+                },
+                {
+                    header: "CSS 3",
+                    svgUrl: "/assets/svg/css.svg"
+                },
+                {
+                    header: "Figma",
+                    svgUrl: "/assets/svg/figma.svg"
+                },
+                {
+                    header: "Microsoft Office",
+                    svgUrl: "/assets/svg/office.svg"
                 },
                
             ]
@@ -74,31 +94,21 @@ const database={
                     projectName: "WitFlix",
                     url: "/assets/images/WitFlixProject.png",
                     content: "A simple, minimal and responsive design Netflix user interface. This was created with vite, CSS, React.",
-                    libraries: ["react", "redux", "axios"],
+                    libraries: ["react", "tailwind", "react hook form"],
                     github: "Github",
                     viewSite: "View Site",
                     githubUrl: "https://github.com/bahadirsevimli/WitFlix-react",
                     siteUrl: "https://witflixx.netlify.app/",
                 },
                 {
-                    projectName: "WitFlix",
-                    url: "/assets/images/WitFlixProject.png",
-                    content: "Basit, minimal, duyarlı bir tasarıma sahip netflix arayüzü. vite, css, react ile oluşturuldu.",
+                    projectName: "My Portfolio",
+                    url: "/assets/images/PortfolioProject.png",
+                    content: "A website where I introduce myself and my projects",
                     libraries: ["react", "redux", "axios"],
                     github: "Github",
-                    viewSite: "Siteyi Görüntüle",
-                    githubUrl: "https://github.com/bahadirsevimli/WitFlix-react",
-                    siteUrl: "https://witflixx.netlify.app/",
-                },
-                {
-                    projectName: "WitFlix",
-                    url: "/assets/images/WitFlixProject.png",
-                    content: "Basit, minimal, duyarlı bir tasarıma sahip netflix arayüzü. vite, css, react ile oluşturuldu.",
-                    libraries: ["react", "redux", "axios"],
-                    github: "Github",
-                    viewSite: "Siteyi Görüntüle",
-                    githubUrl: "https://github.com/bahadirsevimli/WitFlix-react",
-                    siteUrl: "https://witflixx.netlify.app/",
+                    viewSite: "View Site",
+                    githubUrl: "https://github.com/bahadirsevimli/Portfolio-",
+                    siteUrl: "https://bahadirsevimli.com/",
                 },
             ]
         },
@@ -151,16 +161,37 @@ const database={
             skills:[
                 {
                     header: "Java Script",
-                    text: "Bir okuyucunun sayfa düzenine bakarken sayfanın okunabilir içeriğinin dikkatini dağıtacağı uzun süredir bilinen bir gerçektir."
+                    svgUrl: "/assets/svg/javaScript.svg"
                 },
                 {
-                    header: "React.Js",
-                    text: "Bir okuyucunun sayfa düzenine bakarken sayfanın okunabilir içeriğinin dikkatini dağıtacağı uzun süredir bilinen bir gerçektir."
+                    header: "React.js",
+                    svgUrl: "/assets/svg/react.svg"
                 },
                 {
                     header: "Node.js",
-                    text: "Bir okuyucunun sayfa düzenine bakarken sayfanın okunabilir içeriğinin dikkatini dağıtacağı uzun süredir bilinen bir gerçektir."
+                    svgUrl: "/assets/svg/node.svg"
                 },
+                {
+                    header: "Redux",
+                    svgUrl: "/assets/svg/redux.svg"
+                },
+                {
+                    header: "HTML 5",
+                    svgUrl: "/assets/svg/html.svg"
+                },
+                {
+                    header: "CSS 3",
+                    svgUrl: "/assets/svg/css.svg"
+                },
+                {
+                    header: "Figma",
+                    svgUrl: "/assets/svg/figma.svg"
+                },
+                {
+                    header: "Microsoft Office",
+                    svgUrl: "/assets/svg/office.svg"
+                },
+
                
             ]
            
@@ -192,31 +223,23 @@ const database={
                     projectName: "WitFlix",
                     url: "/assets/images/WitFlixProject.png",
                     content: "Basit, minimal, duyarlı bir tasarıma sahip netflix arayüzü. vite, css, react ile oluşturuldu.",
-                    libraries: ["react", "redux", "axios"],
+                    libraries: ["react", "tailwind", "react hook form"],
                     github: "Github",
                     viewSite: "Siteyi Görüntüle",
                     githubUrl: "https://github.com/bahadirsevimli/WitFlix-react",
                     siteUrl: "https://witflixx.netlify.app/",
                 },
                 {
-                    projectName: "WitFlix",
-                    url: "/assets/images/WitFlixProject.png",
-                    content: "Basit, minimal, duyarlı bir tasarıma sahip netflix arayüzü. vite, css, react ile oluşturuldu.",
+                    projectName: "My Portfolio",
+                    url: "/assets/images/PortfolioProject.png",
+                    content: "Kendimi, projelerimi tanıttığım kişisel web sitesi",
                     libraries: ["react", "redux", "axios"],
                     github: "Github",
                     viewSite: "Siteyi Görüntüle",
-                    githubUrl: "https://github.com/bahadirsevimli/WitFlix-react",
-                    siteUrl: "https://witflixx.netlify.app/",
-                }, {
-                    projectName: "WitFlix",
-                    url: "/assets/images/WitFlixProject.png",
-                    content: "Basit, minimal, duyarlı bir tasarıma sahip netflix arayüzü. vite, css, react ile oluşturuldu.",
-                    libraries: ["react", "redux", "axios"],
-                    github: "Github",
-                    viewSite: "Siteyi Görüntüle",
-                    githubUrl: "https://github.com/bahadirsevimli/WitFlix-react",
-                    siteUrl: "https://witflixx.netlify.app/",
+                    githubUrl: "https://github.com/bahadirsevimli/Portfolio-",
+                    siteUrl: "https://bahadirsevimli.com/",
                 },
+               
             ]
         },
         footerSection:{
