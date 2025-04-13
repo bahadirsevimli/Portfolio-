@@ -40,6 +40,22 @@ const database={
                     svgUrl: "/assets/svg/react.svg"
                 },
                 {
+                    header: "Java",
+                    svgUrl: "/assets/svg/java.svg"
+                },
+                {
+                    header: "Spring Boot",
+                    svgUrl: "/assets/svg/spring.svg"
+                },
+                {
+                    header: "PostgreSQL",
+                    svgUrl: "/assets/svg/postgre.svg"
+                },
+                {
+                    header: "Maven",
+                    svgUrl: "/assets/svg/maven.svg"
+                },
+                {
                     header: "Node.js",
                     svgUrl: "/assets/svg/node.svg"
                 },
@@ -63,6 +79,7 @@ const database={
                     header: "Microsoft Office",
                     svgUrl: "/assets/svg/office.svg"
                 },
+                
                
             ]
            
@@ -83,7 +100,7 @@ const database={
                 birthday: "12.01.2001",
                 location: "Kocaeli",
                 education: "Gaziosmanpasa University Physiotherapy 2023",
-                role: "Frontend"
+                role: "Full Stack Developer"
             },
             Introduce: "After graduating from university, I worked as a physiotherapist for about a year. Then I decided to get software training. I am currently receiving 6 months of bootcamp in front end and back end at Workintech."
         },
@@ -168,6 +185,22 @@ const database={
                     svgUrl: "/assets/svg/react.svg"
                 },
                 {
+                    header: "Java",
+                    svgUrl: "/assets/svg/java.svg"
+                },
+                {
+                    header: "Spring Boot",
+                    svgUrl: "/assets/svg/spring.svg"
+                },
+                {
+                    header: "PostgreSQL",
+                    svgUrl: "/assets/svg/postgre.svg"
+                },
+                {
+                    header: "Maven",
+                    svgUrl: "/assets/svg/maven.svg"
+                },
+                {
                     header: "Node.js",
                     svgUrl: "/assets/svg/node.svg"
                 },
@@ -191,7 +224,7 @@ const database={
                     header: "Microsoft Office",
                     svgUrl: "/assets/svg/office.svg"
                 },
-
+                
                
             ]
            
@@ -212,7 +245,7 @@ const database={
                 birthday: "12.01.2001",
                 location: "Kocaeli",
                 education: "Gaziosmanpaşa Üniversitesi Fizyoterapi 2023",
-                role: "Ön uç "
+                role: "Full Stack Developer "
             },
             Introduce: "Üniversiteden mezun olduktan sonra yaklaşık bir yıl fizyoterapist olarak çalıştım. Daha sonra yazılım eğitimi almaya karar verdim. Şu anda Workintech'te ön uç ve arka uç olmak üzere toplam 6 aylık bir eğitim alıyorum."
         },
