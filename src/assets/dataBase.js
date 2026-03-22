@@ -17,7 +17,7 @@ const database = {
       profilePhotoUrl: "/assets/images/profile.jpeg",
       profilePhotoAlt: "profile photo",
       intro:
-        "Hi! I’m a Front-End Developer currently working at Plato Software. Designing web interfaces and improving user experience isn’t just my job—it’s something I’m genuinely passionate about. I enjoy working with React and modern JavaScript technologies. I’m detail-oriented, open to learning, and a strong team player. I take pride in building clean, fast, and user-focused interfaces. I’m constantly learning, following new trends, and doing my best to bring that knowledge into the projects I work on.",
+        "Hello! I am a Full-Stack Developer focused on building scalable and user-centric web applications. I work with modern technologies on both frontend and backend to deliver high-performance, maintainable, and clean solutions. Improving user experience and crafting intuitive interfaces are key priorities for me. I am detail-oriented, collaborative, and committed to continuous learning, constantly exploring new technologies and applying them to my projects.",
       buttons: {
         hireMe: "Hire me",
         hireMeUrl: "mailto:bahadirsevimli@gmail.com",
@@ -107,10 +107,60 @@ const database = {
       project: "Projects",
       projects: [
         {
+          projectName: "Fethiye Kariyer",
+          url: "/assets/images/fethiyekariyer.png",
+          content:
+            "Led the frontend development of a centralized job search platform for the Fethiye Chamber of Commerce.",
+          libraries: ["react", "typescript", "tailwind"],
+          github: "Github",
+          viewSite: "View Site",
+          siteUrl: "https://fethiyekariyer.com/",
+        },
+        {
+          projectName: "Puanla Bizi",
+          url: "/assets/images/puanlabizi.png",
+          content:
+            "I designed and developed the end-to-end architecture of a geo-based system that enables users to evaluate only the local officials in their own region.",
+          libraries: ["react", "typescript", "tailwind"],
+          github: "Github",
+          viewSite: "View Site",
+          siteUrl: "https://puanlabizi.com/",
+        },
+        {
+          projectName: "Yat Duragi",
+          url: "/assets/images/yatduragi.png",
+          content:
+            "I contributed to the redesign of a yacht rental website’s frontend, implementing a modern design concept.",
+          libraries: ["react", "typescript", "tailwind"],
+          github: "Github",
+          viewSite: "View Site",
+          siteUrl: "https://yatduragi.com/",
+        },
+        {
+          projectName: "Projede Firsat",
+          url: "/assets/images/projedefirsat.png",
+          content:
+            "I played a key role in the frontend development of a platform that enables users to explore and evaluate real estate investment projects across Turkey in one place.",
+          libraries: ["react", "typescript", "tailwind"],
+          github: "Github",
+          viewSite: "View Site",
+          siteUrl: "https://projedefirsat.com/",
+        },
+        {
+          projectName: "VillaBox",
+          url: "/assets/images/villabox.png",
+          content:
+            "I redesigned the frontend of a villa rental website, delivering a modern and user-friendly interface.",
+          libraries: ["react", "typescript", "tailwind"],
+          github: "Github",
+          viewSite: "View Site",
+          siteUrl: "https://www.villaboxturkey.com/",
+        },
+        {
           projectName: "WitFlix",
           url: "/assets/images/WitFlixProject.png",
           content:
-            "A simple, minimal and responsive design Netflix user interface. This was created with vite, CSS, React.",
+            "I developed a Netflix clone website, focusing on improving my understanding of routing logic and CSS.",
           libraries: ["react", "tailwind", "react hook form"],
           github: "Github",
           viewSite: "View Site",
@@ -120,7 +170,8 @@ const database = {
         {
           projectName: "My Portfolio",
           url: "/assets/images/PortfolioProject.png",
-          content: "A website where I introduce myself and my projects",
+          content:
+            "When I started learning software during the bootcamp, I built a portfolio website to put my knowledge into practice.",
           libraries: ["react", "redux", "axios"],
           github: "Github",
           viewSite: "View Site",
@@ -160,7 +211,7 @@ const database = {
       profilePhotoUrl: "/assets/images/profile.jpeg",
       profilePhotoAlt: "profile photo",
       intro:
-        "Merhaba! Ben bir Front-End Developer olarak şu anda Plato Yazılım’da çalışıyorum. Web arayüzleri tasarlamak ve kullanıcı deneyimini iyileştirmek benim için sadece bir iş değil, aynı zamanda tutku duyduğum bir alan. React ve modern JavaScript teknolojileriyle çalışmayı seviyorum. Öğrenmeye açık, detaylara önem veren ve ekip çalışmasına yatkın biriyim. Kullanıcı odaklı, hızlı ve sade arayüzler geliştirmekten keyif alıyorum. Kendimi sürekli geliştiriyor, yeni teknolojileri takip ediyor ve öğrendiklerimi projelere yansıtmaya çalışıyorum.",
+        "Merhaba! Ben bir Full-Stack Developer’ım. Ölçeklenebilir ve kullanıcı odaklı web uygulamaları geliştirmeye odaklanıyorum. Hem frontend hem backend tarafında modern teknolojilerle çalışarak performanslı, sürdürülebilir ve sade çözümler üretmeyi hedefliyorum. Kullanıcı deneyimini iyileştirmek, temiz ve anlaşılır arayüzler oluşturmak benim için büyük önem taşıyor. Detaylara dikkat eden, ekip çalışmasına uyumlu ve sürekli öğrenmeye açık bir geliştirici olarak yeni teknolojileri yakından takip ediyor ve edindiğim bilgileri projelerime yansıtıyorum.",
       buttons: {
         hireMe: "İletişime geç",
         hireMeUrl: "mailto:bahadirsevimli@gmail.com",
@@ -250,10 +301,60 @@ const database = {
       project: "Projeler",
       projects: [
         {
+          projectName: "Fethiye Kariyer",
+          url: "/assets/images/fethiyekariyer.png",
+          content:
+            "Fethiye Ticaret Odası için oluşturduğumuz kariyer platformunun ön yüz geliştirme çalışmalarını yönettim.",
+          libraries: ["react", "typescript", "tailwind"],
+          github: "Github",
+          viewSite: "Siteyi Görüntüle",
+          siteUrl: "https://fethiyekariyer.com/",
+        },
+        {
+          projectName: "Puanla Bizi",
+          url: "/assets/images/puanlabizi.png",
+          content:
+            "Coğrafi konuma dayalı olarak kullanıcıların yalnızca kendi bölgelerindeki yerel yöneticileri değerlendirebildiği bir sistemin uçtan uca mimarisini tasarladım ve geliştirdim.",
+          libraries: ["react", "typescript", "tailwind"],
+          github: "Github",
+          viewSite: "Siteyi Görüntüle",
+          siteUrl: "https://puanlabizi.com/",
+        },
+        {
+          projectName: "Yat Durağı",
+          url: "/assets/images/yatduragi.png",
+          content:
+            "Yat kiralama hizmeti sunan bir web sitesinin arayüz tasarımının yenilenmesinde aktif rol aldım ve modern bir tasarım konsepti uyguladım.",
+          libraries: ["react", "typescript", "tailwind"],
+          github: "Github",
+          viewSite: "Siteyi Görüntüle",
+          siteUrl: "https://yatduragi.com/",
+        },
+        {
+          projectName: "Projede Fırsat",
+          url: "/assets/images/projedefirsat.png",
+          content:
+            "Kullanıcıların Türkiye genelindeki inşaat projelerini tek bir platformda inceleyip yatırım fırsatlarını keşfedebildiği bu projenin frontend geliştirme sürecinde önemli rol aldım.",
+          libraries: ["react", "typescript", "tailwind"],
+          github: "Github",
+          viewSite: "Siteyi Görüntüle",
+          siteUrl: "https://projedefirsat.com/",
+        },
+        {
+          projectName: "VillaBox",
+          url: "/assets/images/villabox.png",
+          content:
+            "Villa kiralama hizmeti sunan bir web sitesinin ön yüzünü yenileyerek modern ve kullanıcı dostu bir tasarım kazandırdım.",
+          libraries: ["react", "typescript", "tailwind"],
+          github: "Github",
+          viewSite: "Siteyi Görüntüle",
+          siteUrl: "https://www.villaboxturkey.com/",
+        },
+        {
           projectName: "WitFlix",
           url: "/assets/images/WitFlixProject.png",
           content:
-            "Basit, minimal, duyarlı bir tasarıma sahip netflix arayüzü. vite, css, react ile oluşturuldu.",
+            "Netflix klonu bir site geliştirerek özellikle route mantığını ve CSS becerilerimi geliştirmeye odaklandım.",
           libraries: ["react", "tailwind", "react hook form"],
           github: "Github",
           viewSite: "Siteyi Görüntüle",
@@ -263,7 +364,8 @@ const database = {
         {
           projectName: "My Portfolio",
           url: "/assets/images/PortfolioProject.png",
-          content: "Kendimi, projelerimi tanıttığım kişisel web sitesi",
+          content:
+            "Bootcamp sürecinde yazılıma başladığımda öğrendiklerimi pratiğe dökmek için bir portfolyo sitesi geliştirdim.",
           libraries: ["react", "redux", "axios"],
           github: "Github",
           viewSite: "Siteyi Görüntüle",
